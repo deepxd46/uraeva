@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="leaderboard.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="profile.html">Главная</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+                <li><select id="gameMode">
+                    <option value="tutorial">Обучение</option>
+                    <option value="singlePlayer">Одиночная игра</option>
+                </select></li>
+                <li><a href="leaderboard.html" class="nav-btn">Таблица лидеров</a></li>
+                <li><a href="help.html">Помощь</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <!-- Контейнер для ввода слова -->
+         <div class="welcome-container">
+            <h1>Пользователи</h1>
+            <p>В данной таблице будет находится информация о сеансе игры пользователей и их очками за правильные слова</p>
+            <table class="table">
+                <tr>
+                  <th>Список:</th>
+                  <th>Количество очков:</th>
+                </tr>
+                <tr>
+                  <td>Admin</td>
+                  <td>90</td>
+                </tr>
+                <tr>
+                  <td>Никита</td>
+                  <td>80</td>
+                </tr>
+                <tr>
+                  <td>Мандарин</td>
+                  <td>70</td>
+                </tr>
+              </table> 
+              
+         </div>
+
+
+        
+    
+        
+        
+    
+        
+    </main>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

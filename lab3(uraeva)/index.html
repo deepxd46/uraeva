@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="profile.html">Главная</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+                <li><select id="gameMode">
+                    <option value="tutorial">Обучение</option>
+                    <option value="singlePlayer">Одиночная игра</option>
+                </select></li>
+                <li><a href="leaderboard.html" class="nav-btn">Таблица лидеров</a></li>
+                <li><a href="help.html">Помощь</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="welcome-container">
+            <h1>Игра в слова</h1>
+            <p>Добро пожаловать в увлекательную игру, где нужно собирать слова из предложенных букв!</p>
+            <p>Попробуйте составить как можно больше слов за ограниченное время.</p>
+        </div>
+        <!-- Контейнер для ввода слова -->
+        <div class="input-container">
+            <input type="text" id="input-field" placeholder="Введите слово" readonly>
+        </div>
+
+        <div class="input-container">
+            <button class="delete-btn" onclick="deleteLetter()">Удалить</button>
+            <button class="check-btn" onclick="checkWord()">Проверить слово</button> <!-- Заглушка -->
+        </div>
+    
+        <!-- Плитка с буквами -->
+        <div class="letter-board">
+            <div class="letter-row">
+                <button class="letter-btn" onclick="addLetter('а')">А</button>
+                <button class="letter-btn" onclick="addLetter('б')">Б</button>
+                <button class="letter-btn" onclick="addLetter('в')">В</button>
+                <button class="letter-btn" onclick="addLetter('г')">Г</button>
+                <button class="letter-btn" onclick="addLetter('д')">Д</button>
+                <button class="letter-btn" onclick="addLetter('е')">Е</button>
+            </div>
+            <div class="letter-row">
+                <button class="letter-btn" onclick="addLetter('ж')">Ж</button>
+                <button class="letter-btn" onclick="addLetter('з')">З</button>
+                <button class="letter-btn" onclick="addLetter('и')">И</button>
+                <button class="letter-btn" onclick="addLetter('й')">Й</button>
+                <button class="letter-btn" onclick="addLetter('к')">К</button>
+                <button class="letter-btn" onclick="addLetter('л')">Л</button>
+            </div>
+            <div class="letter-row">
+                <button class="letter-btn" onclick="addLetter('м')">М</button>
+                <button class="letter-btn" onclick="addLetter('н')">Н</button>
+                <button class="letter-btn" onclick="addLetter('о')">О</button>
+                <button class="letter-btn" onclick="addLetter('п')">П</button>
+                <button class="letter-btn" onclick="addLetter('р')">Р</button>
+                <button class="letter-btn" onclick="addLetter('с')">С</button>
+            </div>
+            <div class="letter-row">
+                <button class="letter-btn" onclick="addLetter('т')">Т</button>
+                <button class="letter-btn" onclick="addLetter('у')">У</button>
+                <button class="letter-btn" onclick="addLetter('ф')">Ф</button>
+                <button class="letter-btn" onclick="addLetter('х')">Х</button>
+                <button class="letter-btn" onclick="addLetter('ц')">Ц</button>
+                <button class="letter-btn" onclick="addLetter('ч')">Ч</button>
+            </div>
+            <div class="letter-row">
+                <button class="letter-btn" onclick="addLetter('ш')">Ш</button>
+                <button class="letter-btn" onclick="addLetter('щ')">Щ</button>
+                <button class="letter-btn" onclick="addLetter('ы')">Ы</button>
+                <button class="letter-btn" onclick="addLetter('э')">Э</button>
+                <button class="letter-btn" onclick="addLetter('ю')">Ю</button>
+                <button class="letter-btn" onclick="addLetter('я')">Я</button>
+            </div>
+        </div>
+    
+        <div class="start-game-container">
+            <button id="start-btn" class="start-btn" onclick="startGame()">Начать игру</button>
+    
+            <!-- Таймер -->
+            <div id="timer-container">
+                <p>Осталось времени: <span id="timer">60</span> секунд</p>
+        </div>
+    </main>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

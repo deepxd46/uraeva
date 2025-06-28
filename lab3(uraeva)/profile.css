@@ -1,0 +1,148 @@
+/* Основной стиль страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* Светлый фон */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+/* Шапка с навигацией */
+header {
+    width: 100%;
+    background-color: #333;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для шапки */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    align-items: center; /* Выравнивание по вертикали */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+/* Стили для ссылок в навигации */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Стили для выпадающего списка */
+select {
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 5px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+/* Метки для выпадающего списка */
+label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Контейнер для формы */
+.container {
+    width: 300px;
+    padding: 20px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Метки и поля ввода */
+label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 280px; /* Расширяем до ширины контейнера */
+}
+
+/* Кнопки социальных сетей */
+.social-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.social-btn {
+    width: 32%; /* Уменьшаем ширину кнопок */
+    padding: 10px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-btn:hover {
+    background-color: #45a049;
+}
+
+/* Кнопки внизу формы */
+.footer-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.action-btn {
+    width: 32%;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.action-btn:hover {
+    background-color: #555;
+}

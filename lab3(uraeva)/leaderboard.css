@@ -1,0 +1,114 @@
+/* Основной стиль страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Стиль для шапки сайта */
+header {
+    background-color: #333;
+    height: 15%; /* Увеличиваем высоту шапки */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: space-evenly; /* Равномерное распределение кнопок */
+    align-items: center; /* Выравнивание по вертикали */
+}
+
+nav ul li {
+    text-align: center;
+    margin: 0 30px; /* Увеличиваем расстояние между кнопками */
+}
+
+/* Стили для ссылок в навигации */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 30px; /* Увеличиваем padding для кнопок */
+    font-size: 24px; /* Увеличиваем шрифт */
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    color: #ff0;
+}
+
+/* Стили для выпадающего списка */
+select {
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 5px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Стили для контейнера с информацией об игре */
+.welcome-container {
+    text-align: center; /* Центрируем текст */
+    margin-top: 25px; /* Отступ сверху */
+}
+
+.welcome-container h1 {
+    font-size: 32px; /* Размер шрифта для заголовка */
+    color: #333;
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+.welcome-container p {
+    font-size: 18px; /* Размер шрифта для параграфов */
+    color: #555;
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+.table{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+table, td, th {
+    border-collapse: collapse;
+    border: 3px solid #245488;
+
+  }
+td, th {
+    /* делаем отступ в ячейках, выставляем выравнивание текста */
+    padding: 10px 20px;
+    text-align: center;
+}
+
+table {
+    width: 20%; /* Ограничиваем ширину таблицы, уменьшаем её */
+    max-width: 800px; /* Максимальная ширина */
+    border-collapse: collapse;
+    margin: 0 auto; /* Центрируем таблицу */
+}

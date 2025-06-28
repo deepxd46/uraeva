@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li> 
+                <li><a href="profile.html">Профиль</a></li>
+                <li>
+                    <select id="gameMode">
+                        <option value="tutorial">Обучение</option>
+                        <option value="singlePlayer">Одиночная игра</option>
+                    </select>
+                </li>
+                <li><a href="leaderboard.html">Таблица лидеров</a></li>
+                <li><a href="help.html">Помощь</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Добро пожаловать</h1>
+            
+            <!-- Форма входа -->
+            <form>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Введите E-mail" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Введите пароль" required>
+
+                <div class="social-buttons">
+                    <button type="button" class="social-btn">G-mail</button>
+                    <button type="button" class="social-btn">Vk</button>
+                    <button type="button" class="social-btn">Telegram</button>
+                </div>
+
+                <div class="footer-buttons">
+                    <button type="button" class="action-btn">Регистрация</button>
+                    <button type="button" class="action-btn">Забыли пароль</button>
+                    <button type="submit" class="action-btn">Войти</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
